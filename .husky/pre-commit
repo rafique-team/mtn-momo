@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+LC_ALL=C
+
+local_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+valid_branch_regex="^(feature|bugfix|hotfix)\/(MUI)-[0-9]{1,4}"
+
+message="Invalid branch name. Branch names must adhere to: $valid_branch_regex.\nRename your branch to a valid name and try again."
+
+if [[ ! $local_branch =~ $valid_branch_regex ]]
+then
+    echo -e "$message"
+    exit 1
+fi
+
+npx lint-staged && exit 0
