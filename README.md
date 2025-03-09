@@ -198,7 +198,7 @@ import { mock } from './src/index';
 
 const requestPayload = {
   baseUrl: 'https://sandbox.momodeveloper.mtn.com',
-  providerCallbackHost: 'unumed.com',
+  providerCallbackHost: 'example.com',
   referenceId: 'eb54164c-d0fa-4f0e-b5ed-b9421a9cf7f7',
   subscriptionKey: 'fb127b0faea742498dd40d88456def2f',
 };
@@ -214,7 +214,7 @@ const mockResponse = mock.auth.createApiUserSuccessResponse(requestPayload);
   "message": 'Successfull',
   "requestPayload": {
   baseUrl: 'https://sandbox.momodeveloper.mtn.com',
-  providerCallbackHost: 'unumed.com',
+  providerCallbackHost: 'example.com',
   referenceId: 'eb54164c-d0fa-4f0e-b5ed-b9421a9cf7f7',
   subscriptionKey: 'fb127b0faea742498dd40d88456def2f',
   },
