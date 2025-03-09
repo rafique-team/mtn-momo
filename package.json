@@ -1,8 +1,8 @@
 {
   "name": "mtn-integration",
   "version": "0.0.1",
-  "description": "MTN Ghana integration for Unumed",
-  "author": "Unumed",
+  "description": "MTN Ghana integration",
+  "author": "Rafique",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -25,7 +25,7 @@
     "node": ">=18.12"
   },
   "contributors": [
-    "Albert Llebaria Holda <aleb@unumed.com>"
+    "Rafique Adam Cudjoe <rafiqueacudjoe@gmail.com>"
   ],
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,html,json,yaml,yml}": [
@@ -85,8 +85,8 @@
     "typescript": "^5.3.3"
   },
   "repository": {
-    "type": "bitbucket",
-    "url": "https://bitbucket.org/unumed/mtn"
+    "type": "github",
+    "url": "https://github.com/rafique-team/mtn-momo"
   },
   "config": {
     "commitizen": {
