@@ -6,7 +6,7 @@ import { CreateApiUserRequestDto, CreateApiUserResponseData } from '../interface
  * @remarks - This is used to make an axios call to MTN create sandbox api user endpoint
  *
  * @type {Object}
- * @param {CreateApiUserRequestDto} - create api key request dto
+ * @param {CreateApiUserRequestDto} - create api user request dto
  * @returns  {Object} - This function returns a response from MTN
  */
 export async function initiateCreateApiUser(params: CreateApiUserRequestDto): Promise<CreateApiUserResponseData> {
