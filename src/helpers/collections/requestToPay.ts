@@ -10,6 +10,7 @@ import { RequestToPayRequestDto, RequestToPayResponse } from '../../interfaces/c
  * @returns  {Promise<RequestToPaynResponse>} - This function returns response of mtn request to pay
  */
 export async function processRequestToPay(params: RequestToPayRequestDto): Promise<RequestToPayResponse> {
+  console.log(params)
   // call mtn request to pay endpoint
   const response = await axios.post(
     `${params.baseUrl}/collection/v1_0/requesttopay`,
